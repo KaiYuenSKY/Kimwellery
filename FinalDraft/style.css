@@ -1,0 +1,457 @@
+/* Hello this is first draft aka super rojak things hehe 
+
+There is a zhen han part for all things login and a wei ean part for all things cart
+
+03 June | Wei Ean | First Draft + Integration with Zhen Han's
+07 June | Audrey | Added CSS for Carts, Checkout, Profile, Single Products, Buttons & Fonts
+22 June |  sky   | Animation to cart and checkout
+
+
+
+/* ------------------- audrey things --------------------------*/
+ 
+/*headings & paragraphs*/
+h1 {
+	font-family: 'Meie Script', cursive; /* h1 is for big headings */
+	font-weight: 100;
+	font-size: 30px;
+
+}
+
+h3 {
+	font-family: 'Meie Script', cursive; /* h3 is for page titles */
+	font-size: 50px;
+    font-weight: 100;
+}
+
+h4 {
+	font-family: 'Lato', sans-serif; /* h4 is for paragraph titles */
+	font-weight: 600;
+	color: #3F2E1F;
+}
+
+h5 {
+	font-family: 'Lato', sans-serif; /* h5 is for paragraphs */
+	font-weight: 400;
+	color: #3F2E1F;
+	font-size: 15px;
+}
+
+h6 {
+	font-family: 'Lato', sans-serif; /* h6 is for smaller paragraphs */
+	font-weight: 400;
+	color: #3F2E1F;
+	font-size:13px;
+}
+
+h7 {
+	font-family: 'Lato', sans-serif; /* h7 is for product name - product.php */
+	font-weight: 300;
+	color: #3F2E1F;
+	font-size:40px;
+}
+
+h8 {
+	font-family: 'Lato', sans-serif; /* h8 is for product name - product.php */
+	font-weight: 500;
+	color: #3F2E1F;
+	font-size: 20px;
+}
+
+/* ------------------ zhen han things -------------------- */
+*{
+   
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+}
+
+.container{
+    margin-top: 150px;
+  	padding: 20px;
+    
+} 
+
+.container .content{
+    text-align: center;
+
+}
+
+
+.container .content .btn{
+    display: inline-block;
+    padding:10px 30px;
+    font-size: 20px;
+    background:#333;
+    color:#fff;
+    margin:0 5px;
+    text-transform:capitalize;
+}
+
+.container .content .btn:hover{
+    background:crimson;
+}
+
+.form-container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:30px;
+    padding-bottom: 60px; 
+    background:#eee;
+}
+
+.form-container form{
+    padding:20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    background:#fff;
+    text-align: center;
+    width: 500px;
+
+}
+
+.form-container form input,
+.form-container form select{
+    width: 100%;
+    padding:10px 15px;
+    font-size: 17px;
+    margin:8px 0;
+    background:#eee;
+    border-radius: 5px;
+}
+
+.form-container form select option{
+    background:#fff;
+}
+
+.form-container .form-btn{
+    background:#fbd0d9;
+    color:crimson;
+    text-transform: capitalize;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.form-container .form-btn:hover{
+    background:crimson;
+    color:#fff;
+}
+
+.form-container form .errir-msg{
+    margin:10px 0;
+    display: block;
+    background: crimson;
+    color:#fff;
+    border-radius: 5px;
+    font-size: 20px;
+    padding:10px;
+}
+
+
+/* ------------------- weiean things --------------------------*/
+
+/* boxes */
+.container{
+    width:100%;
+    padding-right:15px;
+    padding-left:15px;
+    margin-right:auto;
+    margin-left:auto
+}
+
+.row{
+    display:-ms-flexbox;
+    display:flex;
+    flex-wrap:wrap;
+    margin-left:5%;
+}
+
+.col{
+    position:relative;
+    width:70%;
+    padding-right:15px;
+    padding-left:15px
+}
+
+.col-smol{
+    position:relative;
+    width:20%;
+    padding-top: 50px;
+    padding-right:15px;
+    padding-left:15px
+}
+
+/* alert */
+.alert{
+    position:relative;
+    padding:.75rem 1.25rem;
+    margin-bottom:1rem;
+    border:1px solid transparent;
+    border-radius:.25rem
+}
+
+button{border-radius:0}
+
+.close{
+    position:absolute;
+    top:0;
+    right:0;
+    padding:.75rem 1.25rem;
+    color:inherit
+}
+
+/*table*/
+.table{
+    width:100%;
+    border-collapse:collapse;
+    background-color:#FFFFFF;
+    text-align:center!important
+}
+
+.table-responsive{
+    display:block;
+    width:100%;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch
+}
+
+thead{
+    vertical-align:top;
+    border-bottom:2px solid #FFFFFF}
+
+.form-control{
+    display:block;
+    width:250px;
+    height:calc(1.5em + .75rem + 2px);
+    padding:.375rem .75rem;
+    line-height:1.5;
+    color:#495057;
+    background-color:#fff;
+    background-clip:padding-box;
+    border:1px solid #ced4da;
+    border-radius:50px;
+    transition:border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size:13px;
+}
+
+/*general*/
+text-center{
+    text-align:center!important
+}
+
+.mt-2{
+    margin-top:.5rem!important
+	
+}
+
+.m-0{margin:0!important}
+
+.text-info{
+    color:#3F2E1F!important
+}
+
+/*button*/
+.btn{
+    display:inline-block;
+    color:#212529;
+    text-align:center;
+    vertical-align:middle;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    background-color:transparent;
+    border:1px solid transparent;
+    padding:.375rem .75rem;
+    font-size:1rem;
+    line-height:1.5;
+    border-radius:.25rem;
+    transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+
+.btn-1{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	color: #FFFFFF;
+	background-color: #3F2E1F;
+	padding: 10px 20px;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-1:hover {
+  background-color: #FFFFFF;
+  color: #3F2E1F;
+  border: 1px solid #3F2E1F;
+}
+
+.btn-2{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	background-color: #C5C0BC;
+    color: #3F2E1F;
+    border: 1px solid #3F2E1F;
+	padding: 10px 20px;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-2:hover {
+  color: #FFFFFF;
+  background-color: #3F2E1F;
+  border: 1px solid #3F2E1F;
+}
+
+
+/* ------------------- audrey things --------------------------*/
+ 
+/*cart*/
+
+.shopping-cart {
+	text-align: center;
+	justify-content: center;
+	padding-bottom: 30px;
+}
+	
+.text-info{
+	font-family: 'Lato', sans-serif;
+	color: #3F2E1F;
+	text-align: left;
+	
+}
+
+.text-info-column{
+	margin-left: 10%;
+	margin-bottom: 5%;
+	
+}
+	
+
+th {
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+}
+
+td {
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+	padding-left: 25px;
+	text-align: left;
+	padding-top: 30px;
+	
+	
+}
+
+.sticky-checkout {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  z-index: 999; /* Set a higher z-index to bring it to the front */
+  background-color: #FFFFFF;
+  height: 10rem;
+  border-top: 2px solid #3F2E1F;
+  opacity: 100%;
+  transition: transform 1.2s, opacity 1.2s, border-radius 1.7s;
+}
+
+/*profile*/
+
+.profile-content {
+	text-align: center;
+	justify-content: center;
+    
+}
+
+.welcome-back {
+	font-size: 25px;
+}
+
+/*checkout*/
+
+.checkout-container {
+	text-align: center;
+    align-items: center;
+	justify-content: center;
+	padding-top: 170px;
+}
+
+.jumbotron{
+    padding:2rem 1rem;
+    margin-bottom:2rem;
+    border-radius:0px;
+	background-color: #FFFFFF;
+	border: 2px solid #3F2E1F;
+	
+}
+
+.place-order {
+	text-align:end;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+	
+}
+
+select {
+    padding: 5px;
+    font-size: 14px;
+    width: 200px;
+}
+
+/*shop*/
+
+.shop-image {
+	width: 210px;
+	height:210px;
+	border: 2px solid #3F2E1F;
+	justify-content: center;
+	
+}
+
+.all-products {
+	justify-content: center;
+	display: inline-block;
+	width: 100%;
+}
+
+.category-bubble {
+	display: flex;
+	justify-content:center;
+	column-gap: 2%;
+}
+
+
+/*single product*/
+
+.product-container{
+	display: flex;
+	column-gap: 5%;
+	justify-content: center;
+}
+
+.product-image{
+	width:410px;
+	height:410px;
+	border: 2px solid #3F2E1F;
+}
+
+
+.product-name{
+	width:450px;
+}
+
